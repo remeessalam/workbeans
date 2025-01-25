@@ -1,14 +1,19 @@
 import homebanner from "../assets/image/homebanner.jpg";
 function Hero() {
   return (
-    <div className="relative bg-black-800 text-white py-20 h-screen">
-      <div className="absolute inset-0">
+    <div
+      className="relative bg-black-800 text-white py-20 h-screen bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url(${homebanner})`,
+      }}
+    >
+      {/* <div className="absolute inset-0">
         <img
           src={homebanner}
           alt="AI Technology"
           className="w-full h-full object-cover "
         />
-      </div>
+      </div> */}
       <div className="absolute top-0 w-full h-full bg-black/50"></div>
 
       <div className="flex flex-col items-center justify-center h-full relative container mx-auto px-4 z-10">

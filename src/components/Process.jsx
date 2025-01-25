@@ -32,12 +32,15 @@ function Process() {
       <div className="absolute top-0 w-full h-full bg-black/40 -z-10"></div>
 
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
+        <h2
+          data-aos="fade-up"
+          className="text-3xl md:text-4xl font-bold mb-8 text-center text-white"
+        >
           Our Process: Making AI Work for You
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="text-center">
+            <div data-aos="fade-up" key={index} className="text-center">
               <div className="bg-violet-500 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
                 {index + 1}
               </div>

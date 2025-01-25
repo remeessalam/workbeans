@@ -8,8 +8,13 @@ import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ContactSection from "./components/ContactSection";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
+  AOS.init({
+    once: true,
+    duration: 1000,
+  });
   return (
     <div className="font-sans">
       <Header />

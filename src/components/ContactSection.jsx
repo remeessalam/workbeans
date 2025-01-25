@@ -50,14 +50,16 @@ const ContactSection = () => {
   return (
     <div
       data-aos="fade-up"
-      id="contacts"
+      id="contact"
       className=" py-[2rem] sm:py-[5rem] text-primarytextcolor bg-backgro-gradient-revert"
     >
       <div className="wrapper">
         <div className="h-full grid md:grid-cols-2 gap-10 py-5">
           <div className="flex flex-col gap-4">
-            <h2 className="heading-2 text-white">Get In Touch With Us!</h2>
-            <p className="desc text-white">
+            <h2 className="heading-2 text-white" data-aos="fade-right">
+              Get In Touch With Us!
+            </h2>
+            <p className="desc text-white" data-aos="fade-right">
               Get in touch with{" "}
               <span className="font-semibold text-violet-600">
                 Workbeans AI
@@ -67,6 +69,7 @@ const ContactSection = () => {
               helping your business reach new heights.
             </p>
             <img
+              data-aos="fade-right"
               src={contactus}
               alt=""
               className="max-h-[21rem] object-cover rounded-xl"
@@ -76,7 +79,10 @@ const ContactSection = () => {
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col gap-4 md:px-[1rem] text-black"
           >
-            <div className="hover:scale-105 transition-all duration-500">
+            <div
+              data-aos="fade-left"
+              className="hover:scale-105 !transition-all duration-500"
+            >
               <label htmlFor="" className="mb-6 font-medium">
                 Full Name
               </label>
@@ -100,7 +106,10 @@ const ContactSection = () => {
               )}
             </div>
 
-            <div className="hover:scale-105 transition-all duration-500">
+            <div
+              data-aos="fade-left"
+              className="hover:scale-105 !transition-all duration-500"
+            >
               <label htmlFor="" className="mb-6 font-medium">
                 Mobile Number
               </label>
@@ -128,7 +137,10 @@ const ContactSection = () => {
               )}
             </div>
 
-            <div className="hover:scale-105 transition-all duration-500">
+            <div
+              data-aos="fade-left"
+              className="hover:scale-105 !transition-all duration-500"
+            >
               <label htmlFor="" className="mb-6 font-medium">
                 Email
               </label>
@@ -156,7 +168,10 @@ const ContactSection = () => {
               )}
             </div>
 
-            <div className="hover:scale-105 transition-all duration-500">
+            <div
+              data-aos="fade-left"
+              className="hover:scale-105 !transition-all duration-500"
+            >
               <label htmlFor="" className="mb-6 font-medium">
                 Message
               </label>
@@ -179,6 +194,7 @@ const ContactSection = () => {
             </div>
 
             <button
+              data-aos="fade-left"
               className="bg-white text-violet-600 hover:text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-violet-400 transition duration-300"
               type="submit"
             >

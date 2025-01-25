@@ -43,14 +43,18 @@ function SuccessStories() {
   return (
     <section id="success-stories" className="py-16 bg-">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
+        <h2
+          data-aos="fade-up"
+          className="text-3xl md:text-4xl font-bold mb-8 text-center text-white"
+        >
           Success Stories
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {stories.map((story) => (
             <div
+              data-aos="fade-up"
               key={story.id}
-              className="bg-white p-6 rounded-lg shadow-md group hover:scale-105 transition-all duration-300"
+              className="bg-white p-6 rounded-lg shadow-md group hover:scale-105 !transition-all duration-300"
             >
               <div className="bg-violet-100 w-fit p-5 group-hover:bg-[#694bd5] rounded-2xl text-[#694bd5] group-hover:text-violet-100 mb-2">
                 {story.icon}

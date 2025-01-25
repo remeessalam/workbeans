@@ -7,7 +7,7 @@ function Mission() {
           <img
             src={ourmission}
             alt=""
-            className="max-h-[60vh] !object-cover h-full rounded-3xl"
+            className="max-h-[60vh] object-contain sm:object-cover h-full rounded-3xl"
           />
         </div>
         <div className="container mx-auto px-4 md:pt-0 pt-5">

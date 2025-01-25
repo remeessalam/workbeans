@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar {
+  scroll-behavior: smooth;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #40299c;
+  border-radius: 8px;
+}
+
+html {
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .wrapper {
+    @apply max-w-7xl mx-auto px-4;
+  }
+  .heading-2 {
+    @apply text-4xl md:text-5xl font-semibold leading-tight;
+  }
+}
